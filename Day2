@@ -1,0 +1,138 @@
+Exercises - Day 2
+
+Exercises: Level 1
+-----------------------
+
+Write a python comment saying 'Day 2: 30 Days of python programming'
+Declare a first name variable and assign a value to it
+Declare a last name variable and assign a value to it
+Declare a full name variable and assign a value to it
+Declare a country variable and assign a value to it
+Declare a city variable and assign a value to it
+Declare an age variable and assign a value to it
+Declare a year variable and assign a value to it
+Declare a variable is_married and assign a value to it
+Declare a variable is_true and assign a value to it
+Declare a variable is_light_on and assign a value to it
+Declare multiple variable on one line
+
+Solutions:
+
+>>> print('Day 2: 30 Days of python programming')
+Day 2: 30 Days of python programming
+>>> first_name='aishiya'
+>>> full_name='aishiya g'
+>>> country='India'
+>>> city='nazareth'
+>>> age=23
+>>> year=2024
+>>> is_married='No'
+>>> is_true=True
+>>> is_light_on=True
+>>> a,b,c=1,'aish',True
+
+Exercises: Level 2
+-----------------------
+Check the data type of all your variables using type() built-in function
+Using the len() built-in function, find the length of your first name
+Compare the length of your first name and your last name
+Declare 5 as num_one and 4 as num_two
+Add num_one and num_two and assign the value to a variable total
+Subtract num_two from num_one and assign the value to a variable diff
+Multiply num_two and num_one and assign the value to a variable product
+Divide num_one by num_two and assign the value to a variable division
+Use modulus division to find num_two divided by num_one and assign the value to a variable remainder
+Calculate num_one to the power of num_two and assign the value to a variable exp
+Find floor division of num_one by num_two and assign the value to a variable floor_division
+The radius of a circle is 30 meters.
+Calculate the area of a circle and assign the value to a variable name of area_of_circle
+Calculate the circumference of a circle and assign the value to a variable name of circum_of_circle
+Take radius as user input and calculate the area.
+Use the built-in input function to get first name, last name, country and age from a user and store the value to their corresponding variable names
+Run help('keywords') in Python shell or in your file to check for the Python reserved words or keywords
+
+Solutions
+----------------
+>>> print(type(first_name),type(full_name),type(country),type(city),type(age),type(year),type(is_married),type(is_true),
+type(is_light_on))
+<class 'str'> <class 'str'> <class 'str'> <class 'str'> <class 'int'> <class 'int'> <class 'str'> <class 'bool'> <class 'bool'>
+>>> len(first_name)
+7
+>>> num_one=5
+>>> num_two=4
+>>> total=num_one+num_two
+>>> print(total)
+9
+>>> diff=num_one-num_two
+>>> product=num_one*num_two
+>>> print(product)
+20
+>>> division=num_one/num_two
+>>> print(division)
+1.25
+>>> remainder=num_two%num_one
+>>> print(remainder)
+4
+>>> exp=num_one**num_two
+>>> print(exp)
+625
+>>> floor_division=num_one/num_two
+>>> print(floor_division)
+1.25
+>>> floor_division=num_one//num_two
+>>> print(floor_division)
+1
+>>> area_of_circle=3.14*30*30
+>>> print(area_of_circle)
+2826.0
+>>> circum_of_circle=2*3.14*30
+>>> print(circum_of_circle)
+188.4
+>>> radius=input('Enter radius')
+Enter radius5
+>>>
+>>> radius=int(radius)
+>>> type(radius)
+<class 'int'>
+>>> area=3.14*radius**2
+>>> print(area)
+78.5
+
+>>> first_name=input('enter your first name ')
+enter your first name aishiya
+
+>>> last_name=input('enter your last name ')
+enter your last name g
+>>> country=input('enter your country ')
+enter your country india
+>>> age= input('enter your age ')
+enter your age 23
+>>> help('keywords')
+
+Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+False               class               from                or
+None                continue            global              pass
+True                def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+break               for                 not
+
+>>> None
+>>> help(None)
+Help on NoneType object:
+
+class NoneType(object)
+ |  Methods defined here:
+ |
+ |  __bool__(self, /)
+ |      True if self else False
+ |
+ |  __repr__(self, /)
+ |      Return repr(self).
+ |
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
