@@ -1,3 +1,5 @@
+Exercise
+----------------
 Declare your age as integer variable
 Declare your height as a float variable
 Declare a variable that store a complex number
@@ -5,6 +7,28 @@ Write a script that prompts the user to enter base and height of the triangle an
     Enter base: 20
     Enter height: 10
     The area of the triangle is 100
+solutions:
+------------
+
+>>> age=23
+>>> type(age)
+<class 'int'>
+
+>>> height=168.3
+>>> type(height)
+<class 'float'>
+
+>>> complex=1+1j
+>>> type(complex)
+<class 'complex'>
+
+>>> base=input('Enter base: ')
+Enter base: 20
+>>> height=input('Enter height: ')
+Enter height: 10
+>>> print('The area of the triangle is ',0.5*int(base)*int(height))
+The area of the triangle is  100.0
+---------------------------------------------
 Write a script that prompts the user to enter side a, side b, and side c of the triangle. Calculate the perimeter of the triangle (perimeter = a + b + c).
 Enter side a: 5
 Enter side b: 4
@@ -12,23 +36,179 @@ Enter side c: 3
 The perimeter of the triangle is 12
 Get length and width of a rectangle using prompt. Calculate its area (area = length x width) and perimeter (perimeter = 2 x (length + width))
 Get radius of a circle using prompt. Calculate the area (area = pi x r x r) and circumference (c = 2 x pi x r) where pi = 3.14.
+
+solutions
+-----------
+>>> a=input('Enter side a: ')
+Enter side a: 5
+>>> b=input('Enter side b: ')
+Enter side b: 4
+>>> c=input('Enter side c: ')
+Enter side c: 3
+>>> perimeter=int(a)*int(b)*int(c)
+>>> print('The perimeter of the triangle: ',perimeter)
+The perimeter of the triangle:  60
+>>> perimeter=int(a)+int(b)+int(c)
+>>> print('The perimeter of the triangle: ',perimeter)
+The perimeter of the triangle:  12
+
+>>> length=input('Enter the length: ')
+Enter the length: 10
+>>> width=input('Enter the width: ')
+Enter the width: 20
+>>> area=length*width
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> area=int(length)*int(width)
+>>> perimeter=2*(int(length)+int(width))
+>>> print('Area and perimeter of the rectangle ',area,perimeter)
+Area and perimeter of the rectangle  200 60
+
+------------------------------------------------
 Calculate the slope, x-intercept and y-intercept of y = 2x -2
 Slope is (m = y2-y1/x2-x1). Find the slope and Euclidean distance between point (2, 2) and point (6,10)
 Compare the slopes in tasks 8 and 9.
-Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is going to be 0.
+
+
+Solutions
+---------
+>>> x=int(input('Enter x-intercept: '))
+Enter x-intercept: 3
+>>> type(x)
+<class 'int'>
+>>> y=2*x-2
+>>> print(y)
+4
+
+>>> y1=2
+>>> x1=2
+>>> y2=10
+>>> x2=6
+>>> m=(y2-y1)/(x2-x1)
+>>> print(m)
+2.0
+
+>>> y is m
+False
+>>> y is not m
+True
+>>> y>m
+True
+>>> m==y
+False
+----------------------------------------
 Find the length of 'python' and 'dragon' and make a falsy comparison statement.
 Use and operator to check if 'on' is found in both 'python' and 'dragon'
 I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
 There is no 'on' in both dragon and python
+
+solutions
+-------------
+
+>>> a=len('python')
+>>> b=len('dragon')
+>>> print(a,b)
+6 6
+>>> a is not b
+False
+>>> a>b
+False
+>>>
+
+
+>>> 'on' in 'python'
+True
+>>> 'on' in 'dragon'
+True
+>>>
+
+>>> 'jargon' in 'I hope this course is not full of jargon'
+True
+
+>>> 'on' not in 'python'
+False
+>>> 'on' not in 'dragon'
+False
+------------------------------------------------
+
 Find the length of the text python and convert the value to float and convert it to string
 Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
 Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
 Check if type of '10' is equal to type of 10
+
+Solutions:
+-----------
+
+>>> a='python'
+>>> len(a)
+6
+>>> a=len(a)
+>>> type(a)
+<class 'int'>
+>>> a=float(a)
+>>> type(a)
+<class 'float'>
+>>> a=str(a)
+>>> type(a)
+<class 'str'>
+>>>
+
+
+>>> 2%3==0
+False
+>>> 6%2==0
+True
+>>>
+
+
+
+>>> a=7/3
+>>> print(a)
+2.3333333333333335
+>>> a=7//3
+>>> print(a)
+2
+>>> b=int(2.7)
+>>> print(b)
+2
+>>> a is b
+True
+
+
+>>> a is b
+True
+>>> a='10'
+>>> b=10
+>>> type(a) is type(b)
+False
+>>>
+
+---------------------------
 Check if int('9.8') is equal to 10
 Writ a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
 Enter hours: 40
 Enter rate per hour: 28
 Your weekly earning is 1120
+
+Solutions
+------------
+
+>>> int(9.8) is 10
+<stdin>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?
+False
+>>>
+
+>>> hours=int(input('Enter hours: '))
+Enter hours: 40
+>>> rate_per_hour=int(input('Enter rate per hour: '))
+Enter rate per hour: 28
+>>> weekly_earning=hours*rate_per_hour
+>>> print('your weekly earning is',weekly_earning)
+your weekly earning is 1120
+>>>
+
+-------------------------------------
 Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
 Enter number of years you have lived: 100
 You have lived for 3153600000 seconds.
@@ -38,3 +218,21 @@ Write a Python script that displays the following table
 3 1 3 9 27
 4 1 4 16 64
 5 1 5 25 125
+
+Solutions
+------------
+
+>>> years_lived=input("Enter number of years you have lived: ")
+Enter number of years you have lived: 23
+>>> years_lived=int(years_lived)
+>>> seconds_lived=years_lived*60*60*365
+>>> print('you have lived for seconds_lived')
+you have lived for seconds_lived
+>>> print('you have lived for', seconds_lived)
+you have lived for 30222000
+
+
+
+
+
+
