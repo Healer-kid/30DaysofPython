@@ -4,14 +4,66 @@ Concatenate the string 'Thirty', 'Days', 'Of', 'Python' to a single string, 'Thi
 Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'.
 Declare a variable named company and assign it to an initial value "Coding For All".
 Print the variable company using print().
+
+Solutions:
+----------
+>>> a=['Thirty', 'Days', 'Of', 'Python']
+>>> b=' '.join(a)
+>>> print(b)
+Thirty Days Of Python
+>>>
+
+>>> a=['Coding', 'For' , 'All']
+>>> b=' '.join(a)
+>>> print(b)
+Coding For All
+>>>
+
+>>> company="Coding For All"
+>>> print(company)
+Coding For All
+------------------------------------------------
+
 Print the length of the company string using len() method and print().
 Change all the characters to uppercase letters using upper() method.
 Change all the characters to lowercase letters using lower() method.
 Use capitalize(), title(), swapcase() methods to format the value of the string Coding For All.
+
+Solutions:
+---------------
+>>> print(len(company))
+14
+>>>
+
+>>> print(company.upper())
+CODING FOR ALL
+>>> print(company.lower())
+coding for all
+>>>
+
+>>> print(company.upper())
+CODING FOR ALL
+>>> print(company.lower())
+coding for all
+>>> print(company.capitalize())
+Coding for all
+>>> print(company.title())
+Coding For All
+>>> print(company.swapcase())
+cODING fOR aLL
+>>>
+
+-----------------------------------------------
 Cut(slice) out the first word of Coding For All string.
 Check if Coding For All string contains a word Coding using the method index, find or other methods.
 Replace the word coding in the string 'Coding For All' to Python.
 Change Python for Everyone to Python for All using the replace method or other methods.
+
+Solutions:
+-----------
+
+
+
 Split the string 'Coding For All' using space as the separator (split()) .
 "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
 What is the character at index 0 in the string Coding For All.
