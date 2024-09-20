@@ -60,7 +60,7 @@ Replace the word coding in the string 'Coding For All' to Python.
 Change Python for Everyone to Python for All using the replace method or other methods.
 
 Solutions:
------------
+----------
 >>> a="Coding for all"
 >>> b=a.split()
 >>> print(b)
